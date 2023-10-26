@@ -149,6 +149,8 @@ PARLER_LANGUAGES = {
 
 JAZZMIN_UI_TWEAKS = {
     "theme": "flatly",
+    "sidebar_fixed": True,
+    "actions_sticky_top": True
 }
 
 JAZZMIN_SETTINGS = {
@@ -162,10 +164,10 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Softify",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "admin_logos/logo_circle.png",
+    "site_logo": "admin_logos/logo.svg",
    
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
-    "login_logo": "admin_logos/Frame.png",
+    "login_logo": "admin_logos/Frame2.svg",
 
     # CSS classes that are applied to the logo above
     "site_logo_classes": "img-circle",
