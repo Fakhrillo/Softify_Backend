@@ -20,6 +20,16 @@ class TeamAdmin(admin.ModelAdmin):
     search_fields = ('id', 'name', 'position')
     list_display_links = ('id', 'name')
 
+    fieldsets = (
+        ('General Information', {
+            'fields': ('name', 'position', 'image')
+        }),
+        
+        ('Social Media Links', {
+            'fields': ('facebook_url', 'twitter_url', 'instagram_url', 'linkedin_url', 'telegram_url', 'github_url'),
+        }),
+    )
+
 @admin.register(Category)
 class CategoryAdmin(TranslatableAdmin):
     list_display=('id', 'name', 'created_at')
